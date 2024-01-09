@@ -1,0 +1,1 @@
+C:\Users\adria\Desktop\Repo\ChristmasApp\Rzucidlo.ChristmasApp.UI\Rzucidlo.ChristmasApp.UI.csproj;x64

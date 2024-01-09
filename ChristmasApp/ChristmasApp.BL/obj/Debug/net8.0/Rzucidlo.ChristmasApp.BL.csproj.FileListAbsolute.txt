@@ -1,0 +1,17 @@
+C:\Users\adria\Desktop\Repo\ChristmasApp\ChristmasApp.BL\bin\Debug\net8.0\Rzucidlo.ChristmasApp.BL.deps.json
+C:\Users\adria\Desktop\Repo\ChristmasApp\ChristmasApp.BL\bin\Debug\net8.0\Rzucidlo.ChristmasApp.BL.dll
+C:\Users\adria\Desktop\Repo\ChristmasApp\ChristmasApp.BL\bin\Debug\net8.0\Rzucidlo.ChristmasApp.BL.pdb
+C:\Users\adria\Desktop\Repo\ChristmasApp\ChristmasApp.BL\bin\Debug\net8.0\Rzucidlo.ChristmasApp.Core.dll
+C:\Users\adria\Desktop\Repo\ChristmasApp\ChristmasApp.BL\bin\Debug\net8.0\Rzucidlo.ChristmasApp.Interfaces.dll
+C:\Users\adria\Desktop\Repo\ChristmasApp\ChristmasApp.BL\bin\Debug\net8.0\Rzucidlo.ChristmasApp.Interfaces.pdb
+C:\Users\adria\Desktop\Repo\ChristmasApp\ChristmasApp.BL\bin\Debug\net8.0\Rzucidlo.ChristmasApp.Core.pdb
+C:\Users\adria\Desktop\Repo\ChristmasApp\ChristmasApp.BL\obj\Debug\net8.0\Rzucidlo.ChristmasApp.BL.csproj.AssemblyReference.cache
+C:\Users\adria\Desktop\Repo\ChristmasApp\ChristmasApp.BL\obj\Debug\net8.0\Rzucidlo.ChristmasApp.BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adria\Desktop\Repo\ChristmasApp\ChristmasApp.BL\obj\Debug\net8.0\Rzucidlo.ChristmasApp.BL.AssemblyInfoInputs.cache
+C:\Users\adria\Desktop\Repo\ChristmasApp\ChristmasApp.BL\obj\Debug\net8.0\Rzucidlo.ChristmasApp.BL.AssemblyInfo.cs
+C:\Users\adria\Desktop\Repo\ChristmasApp\ChristmasApp.BL\obj\Debug\net8.0\Rzucidlo.ChristmasApp.BL.csproj.CoreCompileInputs.cache
+C:\Users\adria\Desktop\Repo\ChristmasApp\ChristmasApp.BL\obj\Debug\net8.0\Rzucidlo.ChristmasApp.BL.csproj.CopyComplete
+C:\Users\adria\Desktop\Repo\ChristmasApp\ChristmasApp.BL\obj\Debug\net8.0\Rzucidlo.ChristmasApp.BL.dll
+C:\Users\adria\Desktop\Repo\ChristmasApp\ChristmasApp.BL\obj\Debug\net8.0\refint\Rzucidlo.ChristmasApp.BL.dll
+C:\Users\adria\Desktop\Repo\ChristmasApp\ChristmasApp.BL\obj\Debug\net8.0\Rzucidlo.ChristmasApp.BL.pdb
+C:\Users\adria\Desktop\Repo\ChristmasApp\ChristmasApp.BL\obj\Debug\net8.0\ref\Rzucidlo.ChristmasApp.BL.dll
