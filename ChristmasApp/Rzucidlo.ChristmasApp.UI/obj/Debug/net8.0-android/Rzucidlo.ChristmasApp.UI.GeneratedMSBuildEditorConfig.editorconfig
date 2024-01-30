@@ -1,0 +1,77 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Rzucidlo.ChristmasApp.UI
+build_property.ProjectDir = C:\Users\adria\Desktop\Repo\ChristmasApp-PW-project\ChristmasApp\Rzucidlo.ChristmasApp.UI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/adria/Desktop/Repo/ChristmasApp-PW-project/ChristmasApp/Rzucidlo.ChristmasApp.UI/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Rzucidlo.ChristmasApp.UI.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/adria/Desktop/Repo/ChristmasApp-PW-project/ChristmasApp/Rzucidlo.ChristmasApp.UI/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Rzucidlo.ChristmasApp.UI.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/adria/Desktop/Repo/ChristmasApp-PW-project/ChristmasApp/Rzucidlo.ChristmasApp.UI/MVVM/Views/ChildrenDetailsView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Rzucidlo.ChristmasApp.UI.MVVM.Views.ChildrenDetailsView.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\ChildrenDetailsView.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\ChildrenDetailsView.xaml
+
+[C:/Users/adria/Desktop/Repo/ChristmasApp-PW-project/ChristmasApp/Rzucidlo.ChristmasApp.UI/MVVM/Views/CreateChildrenView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Rzucidlo.ChristmasApp.UI.MVVM.Views.CreateChildrenView.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\CreateChildrenView.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\CreateChildrenView.xaml
+
+[C:/Users/adria/Desktop/Repo/ChristmasApp-PW-project/ChristmasApp/Rzucidlo.ChristmasApp.UI/MVVM/Views/CreatePresentView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Rzucidlo.ChristmasApp.UI.MVVM.Views.CreatePresentView.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\CreatePresentView.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\CreatePresentView.xaml
+
+[C:/Users/adria/Desktop/Repo/ChristmasApp-PW-project/ChristmasApp/Rzucidlo.ChristmasApp.UI/MVVM/Views/ListChildrenView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Rzucidlo.ChristmasApp.UI.MVVM.Views.ListChildrenView.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\ListChildrenView.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\ListChildrenView.xaml
+
+[C:/Users/adria/Desktop/Repo/ChristmasApp-PW-project/ChristmasApp/Rzucidlo.ChristmasApp.UI/MVVM/Views/UpdateChildrenView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Rzucidlo.ChristmasApp.UI.MVVM.Views.UpdateChildrenView.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\UpdateChildrenView.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\UpdateChildrenView.xaml
+
+[C:/Users/adria/Desktop/Repo/ChristmasApp-PW-project/ChristmasApp/Rzucidlo.ChristmasApp.UI/MVVM/Views/UpdatePresentView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Rzucidlo.ChristmasApp.UI.MVVM.Views.UpdatePresentView.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\UpdatePresentView.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\UpdatePresentView.xaml
+
+[C:/Users/adria/Desktop/Repo/ChristmasApp-PW-project/ChristmasApp/Rzucidlo.ChristmasApp.UI/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Rzucidlo.ChristmasApp.UI.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/adria/Desktop/Repo/ChristmasApp-PW-project/ChristmasApp/Rzucidlo.ChristmasApp.UI/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Rzucidlo.ChristmasApp.UI.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

@@ -1,10 +1,9 @@
 ﻿using Foundation;
 
-namespace Rzucidlo.ChristmasApp.UI
+namespace Rzucidlo.ChristmasApp.UI;
+
+[Register("AppDelegate")]
+public class AppDelegate : MauiUIApplicationDelegate
 {
-    [Register("AppDelegate")]
-    public class AppDelegate : MauiUIApplicationDelegate
-    {
-        protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
-    }
+    protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
 }

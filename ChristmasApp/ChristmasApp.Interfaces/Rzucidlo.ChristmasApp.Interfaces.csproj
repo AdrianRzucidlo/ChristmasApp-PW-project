@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-	<ItemGroup>
-		<ProjectReference Include="..\ChristmasApp.Core\Rzucidlo.ChristmasApp.Core.csproj" />
-	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChristmasApp.Core\Rzucidlo.ChristmasApp.Core.csproj" />
+  </ItemGroup>
 </Project>

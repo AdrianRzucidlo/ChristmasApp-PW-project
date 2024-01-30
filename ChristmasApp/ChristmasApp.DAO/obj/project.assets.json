@@ -1487,19 +1487,6 @@
         "runtime": {
           "bin/placeholder/Rzucidlo.ChristmasApp.Core.dll": {}
         }
-      },
-      "Rzucidlo.ChristmasApp.Interfaces/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Rzucidlo.ChristmasApp.Core": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Rzucidlo.ChristmasApp.Interfaces.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Rzucidlo.ChristmasApp.Interfaces.dll": {}
-        }
       }
     }
   },
@@ -4034,11 +4021,6 @@
       "type": "project",
       "path": "../ChristmasApp.Core/Rzucidlo.ChristmasApp.Core.csproj",
       "msbuildProject": "../ChristmasApp.Core/Rzucidlo.ChristmasApp.Core.csproj"
-    },
-    "Rzucidlo.ChristmasApp.Interfaces/1.0.0": {
-      "type": "project",
-      "path": "../ChristmasApp.Interfaces/Rzucidlo.ChristmasApp.Interfaces.csproj",
-      "msbuildProject": "../ChristmasApp.Interfaces/Rzucidlo.ChristmasApp.Interfaces.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4046,8 +4028,7 @@
       "Microsoft.EntityFrameworkCore >= 8.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.0",
-      "Rzucidlo.ChristmasApp.Core >= 1.0.0",
-      "Rzucidlo.ChristmasApp.Interfaces >= 1.0.0"
+      "Rzucidlo.ChristmasApp.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4057,11 +4038,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adria\\Desktop\\Repo\\ChristmasApp\\ChristmasApp.DAO\\Rzucidlo.ChristmasApp.DAO.csproj",
+      "projectUniqueName": "C:\\Users\\adria\\Desktop\\Repo\\ChristmasApp-PW-project\\ChristmasApp\\ChristmasApp.DAO\\Rzucidlo.ChristmasApp.DAO.csproj",
       "projectName": "Rzucidlo.ChristmasApp.DAO",
-      "projectPath": "C:\\Users\\adria\\Desktop\\Repo\\ChristmasApp\\ChristmasApp.DAO\\Rzucidlo.ChristmasApp.DAO.csproj",
+      "projectPath": "C:\\Users\\adria\\Desktop\\Repo\\ChristmasApp-PW-project\\ChristmasApp\\ChristmasApp.DAO\\Rzucidlo.ChristmasApp.DAO.csproj",
       "packagesPath": "C:\\Users\\adria\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adria\\Desktop\\Repo\\ChristmasApp\\ChristmasApp.DAO\\obj\\",
+      "outputPath": "C:\\Users\\adria\\Desktop\\Repo\\ChristmasApp-PW-project\\ChristmasApp\\ChristmasApp.DAO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4083,11 +4064,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\adria\\Desktop\\Repo\\ChristmasApp\\ChristmasApp.Core\\Rzucidlo.ChristmasApp.Core.csproj": {
-              "projectPath": "C:\\Users\\adria\\Desktop\\Repo\\ChristmasApp\\ChristmasApp.Core\\Rzucidlo.ChristmasApp.Core.csproj"
-            },
-            "C:\\Users\\adria\\Desktop\\Repo\\ChristmasApp\\ChristmasApp.Interfaces\\Rzucidlo.ChristmasApp.Interfaces.csproj": {
-              "projectPath": "C:\\Users\\adria\\Desktop\\Repo\\ChristmasApp\\ChristmasApp.Interfaces\\Rzucidlo.ChristmasApp.Interfaces.csproj"
+            "C:\\Users\\adria\\Desktop\\Repo\\ChristmasApp-PW-project\\ChristmasApp\\ChristmasApp.Core\\Rzucidlo.ChristmasApp.Core.csproj": {
+              "projectPath": "C:\\Users\\adria\\Desktop\\Repo\\ChristmasApp-PW-project\\ChristmasApp\\ChristmasApp.Core\\Rzucidlo.ChristmasApp.Core.csproj"
             }
           }
         }

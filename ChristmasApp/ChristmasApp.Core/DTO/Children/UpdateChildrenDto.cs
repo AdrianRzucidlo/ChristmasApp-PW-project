@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Rzucidlo.ChristmasApp.Core.Interfaces;
 
-namespace Rzucidlo.ChristmasApp.Core.DTO.Children
+namespace Rzucidlo.ChristmasApp.Core.DTO.Children;
+
+public sealed record UpdateChildrenDto : CreateChildrenDto, IChildren
 {
-    public sealed record UpdateChildrenDto : CreateChildrenDto
-    {
-    }
 }

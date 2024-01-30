@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:Rzucidlo.ChristmasApp.UI.MVVM.ViewModels"
+             x:Class="Rzucidlo.ChristmasApp.UI.MVVM.Views.CreatePresentView"
+             x:DataType="viewmodel:CreatePresentViewModel"
+             xmlns:inputLayout="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
+             Title="Create Present">
+    <VerticalStackLayout Margin="0,10,0,0">
+
+        <inputLayout:SfTextInputLayout Hint="Name">
+            <Entry Text="{Binding CreatePresentDto.Name}" TextColor="Black" />
+        </inputLayout:SfTextInputLayout>
+
+        <BoxView></BoxView>
+
+        <Button Text="Save Present" Margin="10" Command="{Binding SavePresentCommand}"></Button>
+    </VerticalStackLayout>
+</ContentPage>

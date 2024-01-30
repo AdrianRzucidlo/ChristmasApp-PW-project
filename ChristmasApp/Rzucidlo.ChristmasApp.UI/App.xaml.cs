@@ -1,14 +1,11 @@
-﻿using Rzucidlo.ChristmasApp.UI.MVVM.Views;
+﻿namespace Rzucidlo.ChristmasApp.UI;
 
-namespace Rzucidlo.ChristmasApp.UI
+public partial class App : Application
 {
-    public partial class App : Application
+    public App()
     {
-        public App()
-        {
-            InitializeComponent();
+        InitializeComponent();
 
-            MainPage = new MainView();
-        }
+        MainPage = new AppShell();
     }
 }

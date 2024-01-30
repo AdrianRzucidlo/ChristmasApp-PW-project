@@ -1,15 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Rzucidlo.ChristmasApp.Core.Interfaces;
 
-namespace Rzucidlo.ChristmasApp.Core.DTO.Present
+namespace Rzucidlo.ChristmasApp.Core.DTO.Present;
+
+public sealed record UpdatePresentDto : CreatePresentDto, IPresent
 {
-    public sealed record UpdatePresentDto : CreatePresentDto
-    {
-        [Required]
-        public int PresentId { get; init; }
-    }
 }

@@ -13,6 +13,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />
@@ -20,7 +21,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ChristmasApp.BL\Rzucidlo.ChristmasApp.BL.csproj" />
-    <ProjectReference Include="..\ChristmasApp.DAO\Rzucidlo.ChristmasApp.DAO.csproj" />
+	  <ProjectReference Include="..\ChristmasApp.DAO\Rzucidlo.ChristmasApp.DAO.csproj" />
+	  <ProjectReference Include="..\ChristmasApp.DAO2\Rzucidlo.ChristmasApp.DAO2.csproj" />
   </ItemGroup>
+
 
 </Project>

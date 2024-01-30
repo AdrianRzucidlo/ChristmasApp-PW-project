@@ -1,30 +1,19 @@
-﻿using Microsoft.Build.Evaluation;
-using Microsoft.Build.Execution;
-using Microsoft.Build.Logging;
-using Microsoft.Extensions.DependencyInjection;
-using Rzucidlo.ChristmasApp.BL.Builders;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Rzucidlo.ChristmasApp.BL.Providers;
-using Rzucidlo.ChristmasApp.Interfaces.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Rzucidlo.ChristmasApp.Core.Interfaces;
 
-namespace Rzucidlo.ChristmasApp.BL
+namespace Rzucidlo.ChristmasApp.BL;
+
+public static class Registration
 {
-    public static class Registration
+    public static IServiceCollection AddDAOServices(this IServiceCollection serviceCollection, string libraryPath)
     {
-        public static IServiceCollection AddDAOServices(this IServiceCollection serviceCollection, string libraryPath)
-        {
-            var daoHandlerProvider = new DAOHandlerProvider();
+        var daoHandlerProvider = new DAOHandlerProvider();
 
-            var databaseHandler = daoHandlerProvider.GetDaoProvider(libraryPath);
+        var databaseHandler = daoHandlerProvider.GetDaoProvider(libraryPath);
 
-            serviceCollection.AddSingleton(typeof(IDatabaseProvider), databaseHandler);
+        serviceCollection.AddSingleton(typeof(IDatabaseHandler), databaseHandler);
 
-            return serviceCollection;
-        }
+        return serviceCollection;
     }
 }

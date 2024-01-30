@@ -7,88 +7,87 @@ using Rzucidlo.ChristmasApp.DAO.Database;
 
 #nullable disable
 
-namespace Rzucidlo.ChristmasApp.DAO.Migrations
+namespace Rzucidlo.ChristmasApp.DAO.Migrations;
+
+[DbContext(typeof(ChristmasDbContext))]
+partial class ChristmasDbContextModelSnapshot : ModelSnapshot
 {
-    [DbContext(typeof(ChristmasDbContext))]
-    partial class ChristmasDbContextModelSnapshot : ModelSnapshot
+    protected override void BuildModel(ModelBuilder modelBuilder)
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
-        {
 #pragma warning disable 612, 618
-            modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.0")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128);
+        modelBuilder
+            .HasAnnotation("ProductVersion", "8.0.0")
+            .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+        SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Rzucidlo.ChristmasApp.Core.Models.Children", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+        modelBuilder.Entity("Rzucidlo.ChristmasApp.Core.Models.Children", b =>
+            {
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                b.Property<string>("Address")
+                    .IsRequired()
+                    .HasMaxLength(100)
+                    .HasColumnType("nvarchar(100)");
 
-                    b.Property<int>("Age")
-                        .HasColumnType("int");
+                b.Property<int>("Age")
+                    .HasColumnType("int");
 
-                    b.Property<byte>("ChildrenBehaviourType")
-                        .HasColumnType("tinyint");
+                b.Property<byte>("ChildrenBehaviourType")
+                    .HasColumnType("tinyint");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                b.Property<string>("Name")
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .HasColumnType("nvarchar(50)");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.ToTable("Childers");
-                });
+                b.ToTable("Childers");
+            });
 
-            modelBuilder.Entity("Rzucidlo.ChristmasApp.Core.Models.Present", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+        modelBuilder.Entity("Rzucidlo.ChristmasApp.Core.Models.Present", b =>
+            {
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("ChildrenId")
-                        .HasColumnType("int");
+                b.Property<int>("ChildrenId")
+                    .HasColumnType("int");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                b.Property<string>("Name")
+                    .IsRequired()
+                    .HasMaxLength(100)
+                    .HasColumnType("nvarchar(100)");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.HasIndex("ChildrenId");
+                b.HasIndex("ChildrenId");
 
-                    b.ToTable("Presents");
-                });
+                b.ToTable("Presents");
+            });
 
-            modelBuilder.Entity("Rzucidlo.ChristmasApp.Core.Models.Present", b =>
-                {
-                    b.HasOne("Rzucidlo.ChristmasApp.Core.Models.Children", "Children")
-                        .WithMany("Presents")
-                        .HasForeignKey("ChildrenId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+        modelBuilder.Entity("Rzucidlo.ChristmasApp.Core.Models.Present", b =>
+            {
+                b.HasOne("Rzucidlo.ChristmasApp.Core.Models.Children", "Children")
+                    .WithMany("Presents")
+                    .HasForeignKey("ChildrenId")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
 
-                    b.Navigation("Children");
-                });
+                b.Navigation("Children");
+            });
 
-            modelBuilder.Entity("Rzucidlo.ChristmasApp.Core.Models.Children", b =>
-                {
-                    b.Navigation("Presents");
-                });
+        modelBuilder.Entity("Rzucidlo.ChristmasApp.Core.Models.Children", b =>
+            {
+                b.Navigation("Presents");
+            });
 #pragma warning restore 612, 618
-        }
     }
 }

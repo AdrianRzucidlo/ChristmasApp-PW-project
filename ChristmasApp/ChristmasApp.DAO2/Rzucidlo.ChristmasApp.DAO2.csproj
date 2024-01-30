@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ChristmasApp.Core\Rzucidlo.ChristmasApp.Core.csproj" />
-    <ProjectReference Include="..\ChristmasApp.Interfaces\Rzucidlo.ChristmasApp.Interfaces.csproj" />
   </ItemGroup>
 
 </Project>

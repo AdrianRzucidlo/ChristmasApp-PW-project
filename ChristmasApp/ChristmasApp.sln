@@ -11,11 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rzucidlo.ChristmasApp.DAO2"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rzucidlo.ChristmasApp.Core", "ChristmasApp.Core\Rzucidlo.ChristmasApp.Core.csproj", "{178E2C67-6107-493C-8089-419AED686D53}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rzucidlo.ChristmasApp.Interfaces", "ChristmasApp.Interfaces\Rzucidlo.ChristmasApp.Interfaces.csproj", "{8E55B916-03F4-4E73-8FEF-1827BF971435}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rzucidlo.ChristmasApp.BL", "ChristmasApp.BL\Rzucidlo.ChristmasApp.BL.csproj", "{E39B89E8-D573-4CF9-AE21-C724641F96E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rzucidlo.ChristmasApp.UI", "Rzucidlo.ChristmasApp.UI\Rzucidlo.ChristmasApp.UI.csproj", "{8A46AF70-49F4-40F7-B652-615AD5FC10E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rzucidlo.ChristmasApp.UI", "Rzucidlo.ChristmasApp.UI\Rzucidlo.ChristmasApp.UI.csproj", "{8A46AF70-49F4-40F7-B652-615AD5FC10E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,10 +37,6 @@ Global
 		{178E2C67-6107-493C-8089-419AED686D53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{178E2C67-6107-493C-8089-419AED686D53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{178E2C67-6107-493C-8089-419AED686D53}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8E55B916-03F4-4E73-8FEF-1827BF971435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8E55B916-03F4-4E73-8FEF-1827BF971435}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8E55B916-03F4-4E73-8FEF-1827BF971435}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8E55B916-03F4-4E73-8FEF-1827BF971435}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E39B89E8-D573-4CF9-AE21-C724641F96E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E39B89E8-D573-4CF9-AE21-C724641F96E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E39B89E8-D573-4CF9-AE21-C724641F96E1}.Release|Any CPU.ActiveCfg = Release|Any CPU

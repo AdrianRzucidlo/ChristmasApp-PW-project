@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Rzucidlo.ChristmasApp.UI.MVVM.Views.ChildrenDetailsView"
+             xmlns:viewmodel="clr-namespace:Rzucidlo.ChristmasApp.UI.MVVM.ViewModels"
+             xmlns:models="clr-namespace:Rzucidlo.ChristmasApp.Core.DTO.Present;assembly=Rzucidlo.ChristmasApp.Core"
+             x:DataType="viewmodel:ChildrenDetailsViewModel"
+             xmlns:inputLayout="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
+             Title="Children Details">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="[+Add present for a children]" Command="{Binding AddPresentCommand}">
+        </ToolbarItem>
+
+        <ToolbarItem Text="[Go home]" Command="{Binding GoHomeCommand}">
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <VerticalStackLayout>
+
+        <Label Text="Name" TextColor="White" FontSize="20" Margin="10"></Label>
+        <Label Text="{Binding GetChildrenDto.Name}" TextColor="Black" FontSize="20" BackgroundColor="White" Margin="10"></Label>
+        <BoxView></BoxView>
+
+        <Label Text="Age" TextColor="White" FontSize="20" Margin="10"></Label>
+        <Label Text="{Binding GetChildrenDto.Age}" TextColor="Black" FontSize="20" BackgroundColor="White"  Margin="10"></Label>
+        <BoxView></BoxView>
+
+        <Label Text="Address" TextColor="White" FontSize="20" Margin="10"></Label>
+        <Label Text="{Binding GetChildrenDto.Address}" TextColor="Black" FontSize="20" BackgroundColor="White"  Margin="10"></Label>
+        <BoxView></BoxView>
+
+        <Label Text="Behaviour" TextColor="White" FontSize="20" Margin="10"></Label>
+        <Label Text="{Binding GetChildrenDto.ChildrenBehaviour}" TextColor="Black" FontSize="20" BackgroundColor="White"  Margin="10"></Label>
+        <BoxView></BoxView>
+
+        <Label Text="Presents:" TextColor="White" FontSize="20" Margin="10"></Label>
+
+        <BoxView></BoxView>
+        <Grid RowDefinitions="*">
+
+            <CollectionView ItemsSource="{Binding Presents}" HeightRequest="100">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:GetPresentDto">
+                        <Frame Margin="10" Padding="10">
+                            <Label Text="{Binding Name}" FontSize="18"></Label>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer CommandParameter="{Binding . }" Command="{Binding Source={x:RelativeSource AncestorType={x:Type viewmodel:ChildrenDetailsViewModel}}, Path= DisplayActionSheetCommand}">
+                                </TapGestureRecognizer>
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,58 +1,65 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Rzucidlo.ChristmasApp.Core.DTO.Children;
-using Rzucidlo.ChristmasApp.Interfaces.Interfaces;
+using Rzucidlo.ChristmasApp.Core.Interfaces;
 
-namespace Rzucidlo.ChristmasApp.API.Controllers
+namespace Rzucidlo.ChristmasApp.API.Controllers;
+
+[ApiController]
+[Route("/api/children")]
+public class ChildrenController : Controller
 {
-    [ApiController]
-    [Route("/api/children")]
-    public class ChildrenController : Controller
+    private readonly IDataRepository _dataRepository;
+
+    public ChildrenController(IDataRepository dataRepository)
     {
-        private readonly IDatabaseProvider _databaseProvider;
+        _dataRepository = dataRepository;
+    }
 
-        public ChildrenController(IDatabaseProvider databaseProvider)
-        {
-            _databaseProvider = databaseProvider;
-        }
+    [HttpGet("/{id}")]
+    public IActionResult Get([FromRoute] int id)
+    {
+        var children = _dataRepository.GetChildren(id);
 
-        [HttpGet("/{id}")]
-        public IActionResult Get([FromRoute] int id)
-        {
-            var children = _databaseProvider.GetChildren(id);
+        return children is null ? NotFound() : Ok(children);
+    }
 
-            return children is null ? NotFound() : Ok(children);
-        }
+    [HttpGet]
+    public IActionResult Get()
+    {
+        var childrens = _dataRepository.GetAllChildren();
 
-        [HttpGet("/{count}/{skip}")]
-        public IActionResult Get([FromRoute] int count, [FromRoute] int skip)
-        {
-            var childrens = _databaseProvider.GetChildrens(count, skip);
+        return Ok(childrens);
+    }
 
-            return Ok(childrens);
-        }
+    [HttpGet("/{count}/{skip}")]
+    public IActionResult Get([FromRoute] int count, [FromRoute] int skip)
+    {
+        var childrens = _dataRepository.GetChildrens(count, skip);
 
-        [HttpPost]
-        public async Task<IActionResult> Create([FromBody] CreateChildrenDto createChildrenDto)
-        {
-            var result = await _databaseProvider.CreateChildren(createChildrenDto);
+        return Ok(childrens);
+    }
 
-            return Created($"/api/children/{result}", null);
-        }
+    [HttpPost]
+    public async Task<IActionResult> Create([FromBody] CreateChildrenDto createChildrenDto)
+    {
+        var result = await _dataRepository.CreateChildren(createChildrenDto);
 
-        [HttpPut("/{id}")]
-        public async Task<IActionResult> Update([FromRoute] int id, [FromBody] UpdateChildrenDto createChildrenDto)
-        {
-            var result = await _databaseProvider.UpdateChildren(createChildrenDto, id);
+        return Created($"/api/children/{result}", null);
+    }
 
-            return result ? Ok() : NotFound();
-        }
+    [HttpPut("/{id}")]
+    public async Task<IActionResult> Update([FromRoute] int id, [FromBody] UpdateChildrenDto createChildrenDto)
+    {
+        var result = await _dataRepository.UpdateChildren(createChildrenDto, id);
 
-        [HttpDelete("/{id}")]
-        public async Task<IActionResult> Delete([FromRoute] int id)
-        {
-            var result = await _databaseProvider.DeleteChildren(id);
+        return result ? Ok() : NotFound();
+    }
 
-            return result ? Ok() : NotFound();
-        }
+    [HttpDelete("/{id}")]
+    public async Task<IActionResult> Delete([FromRoute] int id)
+    {
+        var result = await _dataRepository.DeleteChildren(id);
+
+        return result ? Ok() : NotFound();
     }
 }

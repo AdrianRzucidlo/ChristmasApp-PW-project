@@ -67,19 +67,48 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Maui" Version="7.0.1" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+		<PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
+		<PackageReference Include="Syncfusion.Maui.Core" Version="24.1.47" />
+		<PackageReference Include="Syncfusion.Maui.Inputs" Version="24.1.47" />
 		<ProjectReference Include="..\ChristmasApp.BL\Rzucidlo.ChristmasApp.BL.csproj" />
+		<ProjectReference Include="..\ChristmasApp.DAO2\Rzucidlo.ChristmasApp.DAO2.csproj" />
 		<ProjectReference Include="..\ChristmasApp.DAO\Rzucidlo.ChristmasApp.DAO.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="MVVM\Models\" />
+	  <Compile Update="MVVM\Views\UpdateChildrenView.xaml.cs">
+	    <DependentUpon>UpdateChildrenView.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="MVVM\Views\CreateChildrenView.xaml.cs">
+	    <DependentUpon>CreateChildrenView.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="MVVM\Views\ListChildrenView.xaml.cs">
+	    <DependentUpon>ListChildrenView.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="MVVM\Views\MainView.xaml">
+	  <MauiXaml Update="MVVM\Views\ChildrenDetailsView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVVM\Views\CreatePresentView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVVM\Views\UpdateChildrenView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVVM\Views\CreateChildrenView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVVM\Views\ListChildrenView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MVVM\Views\UpdatePresentView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

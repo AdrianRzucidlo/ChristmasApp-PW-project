@@ -1,27 +1,21 @@
 ﻿using Rzucidlo.ChristmasApp.BL.Builders;
-using Rzucidlo.ChristmasApp.Interfaces.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using Rzucidlo.ChristmasApp.Core.Interfaces;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Rzucidlo.ChristmasApp.BL.Providers
+namespace Rzucidlo.ChristmasApp.BL.Providers;
+
+public sealed class DAOHandlerProvider
 {
-    public sealed class DAOHandlerProvider
+    public Type GetDaoProvider(string libraryPath)
     {
-        public Type GetDaoProvider(string libraryPath)
-        {
-            var dllPath = ProjectBuilder.GetProjectDLL(libraryPath);
+        var dllPath = ProjectBuilder.GetProjectDLL(libraryPath);
 
-            var assembly = Assembly.UnsafeLoadFrom(dllPath);
+        var assembly = Assembly.UnsafeLoadFrom(dllPath);
 
-            var type = typeof(IDatabaseProvider);
+        var type = typeof(IDatabaseHandler);
 
-            var types = assembly.GetTypes();
+        var types = assembly.GetTypes();
 
-            return assembly.GetTypes().FirstOrDefault(t => t.GetInterfaces().Contains(type))!;
-        }
+        return assembly.GetTypes().FirstOrDefault(t => t.GetInterfaces().Contains(type))!;
     }
 }

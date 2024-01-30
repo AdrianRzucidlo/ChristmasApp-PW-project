@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Rzucidlo.ChristmasApp.UI.MVVM.Views.ListChildrenView"
+             xmlns:viewmodel="clr-namespace:Rzucidlo.ChristmasApp.UI.MVVM.ViewModels"
+             xmlns:models="clr-namespace:Rzucidlo.ChristmasApp.Core.DTO.Children;assembly=Rzucidlo.ChristmasApp.Core"
+             x:DataType="viewmodel:ListChildrenViewModel"
+             Title="Children List">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="[+Add children]" Command="{Binding AddChildrenCommand}"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <VerticalStackLayout>
+        <Grid RowDefinitions="*">
+            <CollectionView ItemsSource="{Binding Childrens}" HeightRequest="1000">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:GetChildrenDto">
+                        <Frame Margin="10" Padding="10">
+                            <Label Text="{Binding Name}" FontSize="18"></Label>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer CommandParameter="{Binding . }" Command="{Binding Source={x:RelativeSource AncestorType={x:Type viewmodel:ListChildrenViewModel}}, Path= DisplayActionSheetCommand}">
+                                </TapGestureRecognizer>
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

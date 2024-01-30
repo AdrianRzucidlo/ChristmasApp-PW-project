@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ChristmasApp.Interfaces\Rzucidlo.ChristmasApp.Interfaces.csproj" />
+    <ProjectReference Include="..\ChristmasApp.Core\Rzucidlo.ChristmasApp.Core.csproj" />
   </ItemGroup>
 
 </Project>
