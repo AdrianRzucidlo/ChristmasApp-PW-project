@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Rzucidlo.ChristmasApp.API.props" />
-</Project>
